@@ -1,6 +1,9 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
 
+# MARK: Data Models
+class name = db.String
+
 def retrieve_all_games():
     # Specify Web Driver
     driver = webdriver.Chrome(executable_path='/Users/samdubois/Downloads/chromedriver')
@@ -19,7 +22,8 @@ def retrieve_all_games():
 
         if gameData != None:
             # Bracket for all live games
-
+            #title_elem = job_elem.find('h2', class_='title')
+            
             
             print(result.text)
         else:
